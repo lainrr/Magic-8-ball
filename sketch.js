@@ -1,6 +1,8 @@
-// this query selector isn't working
-const shakeButton = document.querySelector('shake');
+// these query selectors aren't working
+const shakeButton = document.getElementById('#shake');
+const question = document.querySelector('#question');
 console.log(shakeButton); //returns 'null'
+console.log(question); // returns 'null
 
 const answers = ['yes.', 'no.', 'maybe?'];
 let answer = ''
