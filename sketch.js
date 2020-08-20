@@ -2,8 +2,10 @@
 const shakeButton = document.getElementById('shake');
 const question = document.getElementById('question');
 
+
 const answers = ['yes.', 'no!', 'maybe?', 'defo not', 'probs not', 'for sure', 'idk'];
 let answer = ''
+
 
 function shake () {
   if (shakeButton.innerHTML === 'Shake!') {
@@ -23,13 +25,6 @@ function shake () {
 
 shakeButton.addEventListener('click', shake);
 
-/*
-const maroon = '#330c2f';
-const purp = '#7b287d';
-const lilia = '#7067cf';
-const ltPurple = '#b7c0ee';
-const gree = '#cbf3d2';
-*/
 
 function setup() {
     createCanvas(400, 400);
