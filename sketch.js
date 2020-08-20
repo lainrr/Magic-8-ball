@@ -1,5 +1,6 @@
+// this query selector isn't working
 const shakeButton = document.querySelector('shake');
-console.log(shakeButton); 
+console.log(shakeButton); //returns 'null'
 
 const answers = ['yes.', 'no.', 'maybe?'];
 let answer = ''
