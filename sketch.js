@@ -2,16 +2,26 @@
 const shakeButton = document.getElementById('shake');
 const question = document.getElementById('question');
 
+
 const answers = ['yes.', 'no!', 'maybe?', 'defo not', 'probs not', 'for sure', 'idk'];
 let answer = ''
 
-function pickRandomAnswer () {
-  answerIndex = Math.floor(Math.random() * 7);
-  answer = answers[answerIndex];
-}
 
-shakeButton.addEventListener('click', pickRandomAnswer);
+function shake () {
+  if (shakeButton.innerHTML === 'Shake!') {
+    answerIndex = Math.floor(Math.random() * 7);
+    answer = answers[answerIndex];
+    shakeButton.innerHTML = 'Shake again?'
+    question.style.backgroundColor = '#f0efeb';
+  } else {
+    answer = '';
+    question.value = '';
+    shakeButton.innerHTML = 'Shake!'
+    question.style.backgroundColor = 'white';
+  }
+};
 
+shakeButton.addEventListener('click', shake);
 
 function setup() {
     createCanvas(400, 400);

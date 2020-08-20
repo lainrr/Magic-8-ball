@@ -16,8 +16,10 @@ body {
 #question {
     margin: 20px;
     width: 300px;
+    background-color: white; 
 }
 
 #shake {
     font-family: firaMono;
 }
+
