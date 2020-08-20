@@ -7,6 +7,7 @@ body {
     margin: 30px;
     text-align: center;
     font-family: firaMono;
+    color: #7067cf;
 }
 
 #instructions {
@@ -16,10 +17,17 @@ body {
 #question {
     margin: 20px;
     width: 300px;
-    background-color: white; 
+    border: 2px solid #9CE8AA;
+    padding: 5px;
+    color: #330c2f;
+    font-family: firaMono;
 }
 
 #shake {
     font-family: firaMono;
+    color: #7067cf;
+    background-color: #cbf3d2;
+    border: none;
+    padding: 5px 24px;;
 }
 
