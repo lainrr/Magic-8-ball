@@ -11,7 +11,8 @@ function pickRandomAnswer () {
   console.log(answer);
 }
 
-shakeButton.addEventListener('click', pickRandomAnswer);
+// event listener won't work until query selector on line 1 works
+// shakeButton.addEventListener('click', pickRandomAnswer);
 
 
 function setup() {
