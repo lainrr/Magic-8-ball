@@ -1,0 +1,23 @@
+@font-face {
+    font-family: firaMono;
+    src: url(FiraMono-Regular.ttf);
+}
+
+body {
+    margin: 30px;
+    text-align: center;
+    font-family: firaMono;
+}
+
+#instructions {
+    margin: 50px;
+}
+
+#question {
+    margin: 20px;
+    width: 300px;
+}
+
+#shake {
+    font-family: firaMono;
+}
