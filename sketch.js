@@ -1,20 +1,19 @@
-// these query selectors aren't working
-const shakeButton = document.querySelector('#shake');
-const question = document.querySelector('#question');
-console.log(shakeButton); //returns 'null'
-console.log(question); // returns 'null
+
+const shakeButton = document.getElementById('shake');
+const question = document.getElementById('question');
+console.log(shakeButton);
+console.log(question);
 
 const answers = ['yes.', 'no.', 'maybe?'];
 let answer = ''
 
 function pickRandomAnswer () {
-  answerIndex = Math.floor(Math.random() * 2);
+  answerIndex = Math.floor(Math.random() * 3);
   answer = answers[answerIndex];
   console.log(answer);
 }
 
-// event listener won't work until query selector on line 1 works
-// shakeButton.addEventListener('click', pickRandomAnswer);
+shakeButton.addEventListener('click', pickRandomAnswer);
 
 
 function setup() {
