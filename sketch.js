@@ -1,16 +1,13 @@
 
 const shakeButton = document.getElementById('shake');
 const question = document.getElementById('question');
-console.log(shakeButton);
-console.log(question);
 
-const answers = ['yes.', 'no.', 'maybe?'];
+const answers = ['yes.', 'no!', 'maybe?', 'defo not', 'probs not', 'for sure', 'idk'];
 let answer = ''
 
 function pickRandomAnswer () {
-  answerIndex = Math.floor(Math.random() * 3);
+  answerIndex = Math.floor(Math.random() * 7);
   answer = answers[answerIndex];
-  console.log(answer);
 }
 
 shakeButton.addEventListener('click', pickRandomAnswer);
